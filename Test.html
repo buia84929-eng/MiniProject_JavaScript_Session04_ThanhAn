@@ -29,19 +29,19 @@
 
         let Sum = 0;
         console.log("");
-        for( let i = 1; i < 51; i++){
-            if ( i % 3 == 0 ){
+        for( let j = 1; j < 51; j++){
+            if ( j  % 3 == 0 ){
                 console.log("Fizz");
-                sum += i;
-            }else if ( i % 5 ){
+                Sum += j;
+            }else if ( j % 5 ){
                 console.log("Buzz");
-            }else if ( i % 3 == 0 && i % 5 == 0){
+            }else if ( j % 3 == 0 && j % 5 == 0){
                 console.log("FizzBuzz");
             }else{
-                console.log(`${i}`);
+                console.log(`${j}`);
             }
         }
-        console.log(`Tổng bằng ${sum}`);
+        console.log(`Tổng bằng ${Sum}`);
     </script>
 </body>
 </html>
