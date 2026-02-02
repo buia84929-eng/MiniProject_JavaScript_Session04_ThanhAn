@@ -30,13 +30,13 @@
         let Sum = 0;
         console.log("");
         for( let j = 1; j < 51; j++){
-            if ( j  % 3 == 0 ){
-                console.log("Fizz");
-                Sum += j;
+            if ( j  % 3 == 0 && j % 5 == 0){
+                console.log("FizzBuzz");
             }else if ( j % 5 ){
                 console.log("Buzz");
-            }else if ( j % 3 == 0 && j % 5 == 0){
-                console.log("FizzBuzz");
+            }else if ( j % 3 == 0){
+                console.log("Fizz");
+                Sum += j;
             }else{
                 console.log(`${j}`);
             }
